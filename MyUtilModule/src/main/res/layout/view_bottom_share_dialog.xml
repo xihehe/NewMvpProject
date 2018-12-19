@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_200px"
+        android:orientation="vertical" >
+
+         
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:id="@+id/content"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+        <com.fc.myutilmodule.ViewModule.BamLinearLayout
+            android:id="@+id/dialog_iconWx"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.fc.myutilmodule.ViewModule.BamImageView
+                android:src="@mipmap/dialog_bottom_icon_wx"
+                android:layout_width="@dimen/height_110px"
+                android:layout_height="@dimen/height_110px" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_10px"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/A4D4D4D"
+                android:text="微信"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.fc.myutilmodule.ViewModule.BamLinearLayout>
+
+            <com.fc.myutilmodule.ViewModule.BamLinearLayout
+                android:id="@+id/dialog_iconPyq"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.fc.myutilmodule.ViewModule.BamImageView
+                    android:src="@mipmap/dialog_bottom_icon_pyq"
+                    android:layout_width="@dimen/height_110px"
+                    android:layout_height="@dimen/height_110px" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10px"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/A4D4D4D"
+                    android:text="朋友圈"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.fc.myutilmodule.ViewModule.BamLinearLayout>
+
+            <com.fc.myutilmodule.ViewModule.BamLinearLayout
+                android:id="@+id/dialog_iconQQ"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.fc.myutilmodule.ViewModule.BamImageView
+                    android:src="@mipmap/dialog_bottom_icon_qq"
+                    android:layout_width="@dimen/height_110px"
+                    android:layout_height="@dimen/height_110px" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10px"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/A4D4D4D"
+                    android:text="QQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </com.fc.myutilmodule.ViewModule.BamLinearLayout>
+
+            <com.fc.myutilmodule.ViewModule.BamLinearLayout
+                android:id="@+id/dialog_iconWeibo"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <com.fc.myutilmodule.ViewModule.BamImageView
+                    android:src="@mipmap/dialog_bottom_icon_weibo"
+                    android:layout_width="@dimen/height_110px"
+                    android:layout_height="@dimen/height_110px" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10px"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/A4D4D4D"
+                    android:text="微博"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </com.fc.myutilmodule.ViewModule.BamLinearLayout>
+             
+
+        </LinearLayout>
+
+     
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:background="@drawable/circle_all_dialog_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_marginTop="@dimen/margin_20px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:layout_marginRight="@dimen/margin_10px"
+                android:layout_marginBottom="@dimen/margin_20px"
+                android:id="@+id/edit_content"
+                android:background="@drawable/circle_gray_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="123123"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/A4D4D4D"
+                android:textSize="@dimen/txt_size_28px"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="@dimen/height_70px"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="5.0dip"
+                />
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="hm_DCIM" path="cityhuner" />
+    <cache-path name="name" path="." />
+    <external-files-path name="cityhuner" path="cityhuner/" />
+
+</paths>

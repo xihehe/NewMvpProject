@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_50px"
+        android:layout_marginRight="@dimen/margin_50px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 账号 -->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_50px"
+            android:layout_marginRight="@dimen/margin_50px"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_90px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80px"
+                android:paddingLeft="@dimen/margin_10px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+
+
+
+                <EditText
+                    android:paddingLeft="@dimen/margin_10px"
+                    android:id="@+id/login_main_accout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:hint="请输入用户名"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/FEFEFE"
+                    style="@style/edittext_my"
+
+                    />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/margin_20px"
+                    android:src="@mipmap/icon_register_accont_white"
+                    android:layout_width="@dimen/height_32px"
+                    android:layout_height="@dimen/height_32px" />
+            </LinearLayout>
+
+            <View
+                style="@style/DividerHorizontalWhite"
+                />
+        </LinearLayout>
+
+
+
+        <!-- 密码 -->
+
+        <LinearLayout
+            android:id="@+id/login_psw_layout"
+            android:layout_marginLeft="@dimen/margin_50px"
+            android:layout_marginRight="@dimen/margin_50px"
+            android:layout_marginTop="@dimen/margin_10px"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_90px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_80px"
+                android:paddingLeft="@dimen/margin_10px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <EditText
+                    android:paddingLeft="@dimen/margin_10px"
+                    android:id="@+id/login_main_password"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/FEFEFE"
+                    style="@style/edittext_my"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/login_psw_showPsw"
+                    android:layout_marginRight="@dimen/margin_20px"
+                    android:src="@mipmap/icon_register_pws_white"
+                    android:layout_width="@dimen/height_32px"
+                    android:layout_height="@dimen/height_32px" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/DividerHorizontalWhite"
+                />
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

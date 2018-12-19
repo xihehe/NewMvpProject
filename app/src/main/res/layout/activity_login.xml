@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootViews"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_home_drak"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="@dimen/margin_100px"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_main_logoImg"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+        <include
+            android:layout_marginTop="@dimen/margin_100px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_login_inout"
+            />
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/margin_100px"
+            android:layout_marginRight="@dimen/margin_100px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.fc.myutilmodule.ViewModule.BamTextView
+
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_40px"
+                android:id="@+id/login_main_unlock"
+                android:text="解封账号"
+                android:gravity="center_vertical|left"
+                android:layout_alignParentLeft="true"
+                style="@style/TextSize_Normal"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.fc.myutilmodule.ViewModule.BamTextView
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_40px"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:id="@+id/login_main_forget"
+                android:text="忘记密码"
+                android:gravity="center_vertical|right"
+                style="@style/TextSize_Normal"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_40px"
+            android:layout_marginLeft="@dimen/margin_100px"
+            android:layout_marginRight="@dimen/margin_100px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <include
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/layout_progress"
+                layout="@layout/layout_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.fc.myutilmodule.ViewModule.BamButton
+                android:layout_centerInParent="true"
+                android:id="@+id/login_main_submit"
+                style="@style/TextSize_Normal"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:background="@drawable/circle_all_btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_90px" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin_20px"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/login_show_btn"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_40px"
+                android:text="测试RxCheckbox"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/margin_100px"
+                android:layout_marginRight="@dimen/margin_100px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_80px"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.fc.myutilmodule.ViewModule.BamTextView
+                    android:text="没有账号?"
+                    style="@style/TextSize_little"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.fc.myutilmodule.ViewModule.BamTextView
+                    android:paddingBottom="@dimen/margin_5px"
+                    android:id="@+id/login_main_register"
+                    android:text="立即注册"
+                    style="@style/TextSize_Normal"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+

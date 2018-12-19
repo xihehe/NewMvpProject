@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:contentScrim="#00000000"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:paddingTop="@dimen/margin_46px"
+
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:collapsedTitleTextAppearance="@style/ToolBarTitleText"
+            app:contentScrim="#00000000"
+            app:expandedTitleMarginEnd="48dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@style/transparentText"
+            app:layout_collapseMode="parallax"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <!--设置layout_scrollFlags保证CollapsingToolbarLayout能滚动-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+            <!--Toolbar放在下面不然会被挡住-->
+            <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:background="#00000000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--app:layout_collapseMode="parallax"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >-->
+            <!--</android.support.v7.widget.Toolbar>-->
+
+            <com.hjq.bar.TitleBar
+                app:line_visible="false"
+                app:layout_collapseMode="parallax"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_width="match_parent"
+                android:background="#00000000"
+                android:layout_height="wrap_content"></com.hjq.bar.TitleBar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+        <!--android:background="@android:color/holo_green_dark"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp" />-->
+        <!--</LinearLayout>-->
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/toolbar_height">
+
+           <TextView
+               android:layout_margin="4dp"
+               android:background="@color/white"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="10dp"
+               android:textColor="#000000"
+               android:text="搜索"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+
+
+       </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/moretab_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.v4.widget.NestedScrollView>
+    <!--在CoordinatorLayout中只要是能滑动控件的都需要设置layout_behavior-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+</android.support.design.widget.CoordinatorLayout>
+

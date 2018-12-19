@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/img_select_recycler"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+         android:id="@+id/img_select_one"
+        style="@style/TextSize_Normal"
+        android:text="选择单张"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_all_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px" />
+
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:layout_marginTop="@dimen/margin_10px"
+         android:id="@+id/img_select_more"
+        style="@style/TextSize_Normal"
+        android:text="选择多张"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_all_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:layout_marginTop="@dimen/margin_10px"
+        android:id="@+id/img_select_compress"
+        style="@style/TextSize_Normal"
+        android:text="压缩"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_all_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_90px" />
+</LinearLayout>
