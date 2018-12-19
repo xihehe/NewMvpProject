@@ -58,21 +58,7 @@ public class RxJavaUtils {
                 .throttleFirst(2, TimeUnit.SECONDS)  // 才发送 2s内第1次点击按钮的事件
                 .subscribe(consumer);
 
-//        Subscription mSubscription = null;
-//        mSubscription = (Subscription) Observable.create(new ObservableOnSubscribe<View>() {
-//            @Override
-//            public void subscribe(ObservableEmitter<View> emitter) throws Exception {
-//                emitter.onNext(view);
-//            }
-//        })
-//                .buffer(2, TimeUnit.SECONDS) // 缓存0.5s内的点击
-//                .subscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe();
-//
-//        return mSubscription;
     }
-
 
     /**
      * checkbox监听
