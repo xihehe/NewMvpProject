@@ -44,10 +44,7 @@ public class RxJavaUtils {
                 .debounce(1, TimeUnit.SECONDS).skip(1)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(observer);
-
-
     }
-
     /**
      * 按钮防抖
      * @param view
@@ -57,7 +54,6 @@ public class RxJavaUtils {
         RxView.clicks(view)
                 .throttleFirst(2, TimeUnit.SECONDS)  // 才发送 2s内第1次点击按钮的事件
                 .subscribe(consumer);
-
     }
 
     /**

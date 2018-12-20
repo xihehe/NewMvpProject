@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
+import com.example.fc.newmvpproject.CountDownModule.SimpleCountDownActivity;
 import com.example.fc.newmvpproject.ImageModule.PickPhotoActivity;
 import com.example.fc.newmvpproject.Utils.ToastUtil;
 import com.fc.myutilmodule.BaseModule.BaseActivity;
@@ -121,6 +122,8 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                                 dialog.dismiss();
                             }
                         },((BaseActivity) context).getSupportFragmentManager());
+                    }else if(position==4){
+                        ((BaseActivity) context).IntentToActivity(context, SimpleCountDownActivity.class,null);
                     }
                 }
 

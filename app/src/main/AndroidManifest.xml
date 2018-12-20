@@ -42,6 +42,12 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
             android:screenOrientation="portrait"
             android:name=".ImageModule.PickPhotoActivity"></activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:name=".CountDownModule.SimpleCountDownActivity"></activity>
     </application>
 
 </manifest>
