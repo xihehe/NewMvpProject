@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.fc.myutilmodule.R;
 import com.fc.myutilmodule.Utils.TimeUtils;
 import com.jakewharton.rxbinding2.view.RxView;
 import com.jakewharton.rxbinding2.widget.RxTextView;
@@ -26,7 +27,6 @@ public class RxCountDown {
     private Disposable mDisposable;
     private Observable mObservable;
     private Observer mObserver;
-
     private  TextView textView;
 
     public RxCountDown(TextView textView) {
@@ -76,6 +76,7 @@ public class RxCountDown {
                     mDisposable.dispose();
                     try {
                         RxTextView.text(textView).accept("发送验证码");
+                        RxTextView.textRes(textView).accept(R.drawable.circle_half_dialog_bg);
                         RxView.enabled(textView).accept(true);
                     } catch (Exception e) {
                         e.printStackTrace();

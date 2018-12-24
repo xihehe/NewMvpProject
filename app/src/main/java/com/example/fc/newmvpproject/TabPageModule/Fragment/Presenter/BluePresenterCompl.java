@@ -39,7 +39,17 @@ public class BluePresenterCompl implements IBluePresenter {
             blueDataHolder.CleanData();
         }
         for(int i=0;i<10;i++){
-            blueDataHolder.addData(new BlueItem("目录" + i,"内容" + i,""));
+            if(i==0){
+                blueDataHolder.addData(new BlueItem("对话框","对话框展示" ,""));
+            }else if(i==1){
+                blueDataHolder.addData(new BlueItem("倒计时" ,"倒计时展示",""));
+            }else if(i==2){
+                blueDataHolder.addData(new BlueItem("图片压缩上传" ,"压缩图片上传图片" ,""));
+            }else if(i==3){
+                blueDataHolder.addData(new BlueItem("目录" + i,"内容" + i,""));
+            }else {
+                blueDataHolder.addData(new BlueItem("目录" + i, "内容" + i, ""));
+            }
         }
         return blueDataHolder.getDatas();
     }
