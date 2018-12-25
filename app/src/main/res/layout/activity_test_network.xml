@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/network_ob_noparm"
+        android:text="OB模式GET（无参数）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/network_ob_param"
+        android:text="OB模式GET（带参数）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/network_ob_object"
+        android:text="OB模式POST（带Object参数）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/network_ob_requestBody"
+        android:text="OBRequestBody模式POST（带RequestBody参数）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/network_ob_fielmap"
+        android:text="OBFielMap模式POST（带FielMap参数）"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

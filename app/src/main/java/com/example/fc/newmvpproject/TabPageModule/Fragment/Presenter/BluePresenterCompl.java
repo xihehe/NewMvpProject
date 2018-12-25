@@ -46,7 +46,7 @@ public class BluePresenterCompl implements IBluePresenter {
             }else if(i==2){
                 blueDataHolder.addData(new BlueItem("图片压缩上传" ,"压缩图片上传图片" ,""));
             }else if(i==3){
-                blueDataHolder.addData(new BlueItem("目录" + i,"内容" + i,""));
+                blueDataHolder.addData(new BlueItem("网络请求" ,"各种模式网络请求",""));
             }else {
                 blueDataHolder.addData(new BlueItem("目录" + i, "内容" + i, ""));
             }

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 
 import com.example.fc.newmvpproject.TestModule.ImageModule.PickPhotoActivity;
+import com.example.fc.newmvpproject.TestModule.NetworkModule.TestNetWorkActivity;
 import com.example.fc.newmvpproject.TestModule.SimpleCountDownActivity;
 import com.example.fc.newmvpproject.TestModule.TestDialogActivity;
 import com.example.fc.newmvpproject.Utils.ToastUtil;
@@ -17,10 +18,13 @@ import com.example.fc.newmvpproject.R;
 import com.example.fc.newmvpproject.TabPageModule.Fragment.Model.BlueItem;
 import com.fc.myutilmodule.DialogBottomModule.DialogFragmentUtils.CustomDialogBoottomShareFragment;
 import com.fc.myutilmodule.DialogModule.IInputDialog;
+import com.fc.myutilmodule.RxJavaModule.RxJavaUtils;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.List;
+
+import io.reactivex.functions.Consumer;
 
 public class BlueAdapter extends CommonAdapter<BlueItem> {
 
@@ -47,10 +51,9 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
         TxtItemTitle.setText(s.getTitle());
         TxtItemContent.setText(s.getName());
 
-        TxtItemTitle.setOnClickListener(new View.OnClickListener() {
+        RxJavaUtils.RxClick(TxtItemTitle, new Consumer() {
             @Override
-            public void onClick(View v) {
-
+            public void accept(Object o) throws Exception {
                 if(context instanceof BaseActivity) {
                     if (position == 0) {
                         ((BaseActivity) context).IntentToActivity(context, TestDialogActivity.class,null);
@@ -59,16 +62,17 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==2){
                         ((BaseActivity) context).IntentToActivity(context, PickPhotoActivity.class, null);
                     }else if(position==3){
-
+                        ((BaseActivity) context).IntentToActivity(context, TestNetWorkActivity.class, null);
                     }else if(position==4){
 
                     }
                 }
             }
         });
-        TxtItemContent.setOnClickListener(new View.OnClickListener() {
+
+        RxJavaUtils.RxClick(TxtItemContent, new Consumer() {
             @Override
-            public void onClick(View v) {
+            public void accept(Object o) throws Exception {
                 if(context instanceof BaseActivity) {
                     if (position == 0) {
                         ((BaseActivity) context).IntentToActivity(context, TestDialogActivity.class,null);
@@ -77,13 +81,14 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==2){
                         ((BaseActivity) context).IntentToActivity(context, PickPhotoActivity.class, null);
                     }else if(position==3){
-
+                        ((BaseActivity) context).IntentToActivity(context, TestNetWorkActivity.class, null);
                     }else if(position==4){
 
                     }
                 }
             }
         });
+
 //        homeTxtItem.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

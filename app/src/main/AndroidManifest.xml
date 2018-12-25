@@ -41,13 +41,19 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
             android:screenOrientation="portrait"
-            android:name=".ImageModule.PickPhotoActivity"></activity>
+            android:name=".TestModule.ImageModule.PickPhotoActivity"></activity>
 
         <activity
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
             android:screenOrientation="portrait"
-            android:name=".CountDownModule.SimpleCountDownActivity"></activity>
+            android:name=".TestModule.SimpleCountDownActivity"></activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:name=".TestModule.NetworkModule.TestNetWorkActivity"></activity>
     </application>
 
 </manifest>
