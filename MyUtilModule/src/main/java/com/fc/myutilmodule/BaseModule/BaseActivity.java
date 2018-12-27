@@ -111,7 +111,6 @@ public class BaseActivity extends AppCompatActivity {
         requestOptions.placeholder(res);
         Glide.with(BaseActivity.this)
                 .load(url)
-
                 .apply(requestOptions)
                 .into(imageView);
     }

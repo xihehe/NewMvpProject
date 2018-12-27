@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 
- import com.example.fc.newmvpproject.R;
-import com.example.fc.newmvpproject.TestModule.ImageModule.PickPhotoActivity;
+import com.example.fc.newmvpproject.R;
 import com.example.fc.newmvpproject.Utils.ToastUtil;
 import com.fc.myutilmodule.BaseModule.BaseToolBarActivity;
 import com.fc.myutilmodule.DialogBottomModule.DialogFragmentUtils.CustomDialogBoottomShareFragment;
@@ -31,6 +31,8 @@ public class TestDialogActivity extends BaseToolBarActivity {
     BamButton dialogBottomShare;
     @BindView(R.id.dialog_bottom_input)
     BamButton dialogBottomInput;
+    @BindView(R.id.dialog_bottom_img)
+    ImageView dialogBottomImg;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class TestDialogActivity extends BaseToolBarActivity {
         setContentView(R.layout.activity_test_dialog);
         ButterKnife.bind(this);
 
+        loadImg(R.drawable.page1,dialogBottomImg);
 
     }
 

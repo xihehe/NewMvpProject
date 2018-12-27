@@ -2,6 +2,7 @@ package com.example.fc.newmvpproject.TabPageModule.Fragment.BlueFragment.Adapter
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
@@ -18,10 +19,14 @@ import com.example.fc.newmvpproject.R;
 import com.example.fc.newmvpproject.TabPageModule.Fragment.Model.BlueItem;
 import com.fc.myutilmodule.DialogBottomModule.DialogFragmentUtils.CustomDialogBoottomShareFragment;
 import com.fc.myutilmodule.DialogModule.IInputDialog;
+import com.fc.myutilmodule.PhotoShowModule.PhotoShowActivity;
+import com.fc.myutilmodule.PhotoShowModule.PhotoShowItem;
 import com.fc.myutilmodule.RxJavaModule.RxJavaUtils;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import io.reactivex.functions.Consumer;
@@ -65,6 +70,19 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                         ((BaseActivity) context).IntentToActivity(context, TestNetWorkActivity.class, null);
                     }else if(position==4){
 
+                        Bundle bundle = new Bundle();
+                        List<PhotoShowItem> imgRes = new ArrayList<>();
+                        PhotoShowItem photoShowItem1 = new PhotoShowItem();
+                        photoShowItem1.setUri("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545888202406&di=66c3d36b4d7902e784303d89ee8a4fa3&imgtype=0&src=http%3A%2F%2Fww3.sinaimg.cn%2Forj360%2F90dad067gw1fbixslohxtj20go23fwt1.jpg");
+                        PhotoShowItem photoShowItem2 = new PhotoShowItem();
+                        photoShowItem2.setUri("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545888236170&di=c138138dbd387d1065ffb2aeb9007172&imgtype=0&src=http%3A%2F%2Fwx1.sinaimg.cn%2Forj360%2F9cacf6efgy1fjtigh0bmrj20qo5s11kx.jpg");
+                        imgRes.add(photoShowItem1);
+                        imgRes.add(photoShowItem2);
+                        bundle.putSerializable(PhotoShowActivity.SHOW_IMGS_DATA,(Serializable)imgRes);
+                        ((BaseActivity) context).IntentToActivity(context, PhotoShowActivity.class, bundle);
+
+                    }else{
+
                     }
                 }
             }
@@ -83,6 +101,17 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==3){
                         ((BaseActivity) context).IntentToActivity(context, TestNetWorkActivity.class, null);
                     }else if(position==4){
+                        Bundle bundle = new Bundle();
+                        List<PhotoShowItem> imgRes = new ArrayList<>();
+                        PhotoShowItem photoShowItem1 = new PhotoShowItem();
+                        photoShowItem1.setUri(R.drawable.page1);
+                        PhotoShowItem photoShowItem2 = new PhotoShowItem();
+                        photoShowItem2.setUri(R.drawable.page3);
+                        imgRes.add(photoShowItem1);
+                        imgRes.add(photoShowItem2);
+                        bundle.putSerializable(PhotoShowActivity.SHOW_IMGS_DATA,(Serializable)imgRes);
+                        ((BaseActivity) context).IntentToActivity(context, PhotoShowActivity.class, bundle);
+                    }else{
 
                     }
                 }
