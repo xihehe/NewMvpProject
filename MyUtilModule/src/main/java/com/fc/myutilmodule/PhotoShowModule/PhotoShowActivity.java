@@ -2,10 +2,12 @@ package com.fc.myutilmodule.PhotoShowModule;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 
 import com.fc.myutilmodule.BaseModule.BaseToolBarActivity;
 import com.fc.myutilmodule.R;
+import com.shizhefei.view.indicator.FixedIndicatorView;
 import com.shizhefei.view.indicator.IndicatorViewPager;
 import com.shizhefei.view.indicator.ScrollIndicatorView;
 
@@ -17,7 +19,7 @@ public class PhotoShowActivity extends BaseToolBarActivity {
     PhotoShowAdapter photoShowAdapter;
     private ViewPager photoViewPager;
     private IndicatorViewPager indicatorViewPager;
-    private ScrollIndicatorView scrollIndicatorView;
+    private FixedIndicatorView fixedIndicatorView;
     List<PhotoShowItem> mDatas;
     public static final String SHOW_IMGS_DATA = "show_imgs_data";
 
@@ -26,11 +28,12 @@ public class PhotoShowActivity extends BaseToolBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photoshow);
         initBundle();
+        titleBar.setBackgroundColor(ContextCompat.getColor(this,R.color.black));
         photoShowAdapter = new PhotoShowAdapter(getSupportFragmentManager(),this,mDatas);
         photoViewPager = (ViewPager)findViewById(R.id.photo_viewPager);
         photoViewPager.setOffscreenPageLimit(3);
-        scrollIndicatorView = (ScrollIndicatorView)findViewById(R.id.moretab_indicator);
-        indicatorViewPager = new IndicatorViewPager(scrollIndicatorView, photoViewPager);
+        fixedIndicatorView = (FixedIndicatorView)findViewById(R.id.moretab_indicator);
+        indicatorViewPager = new IndicatorViewPager(fixedIndicatorView, photoViewPager);
         indicatorViewPager.setAdapter(photoShowAdapter);
     }
 
