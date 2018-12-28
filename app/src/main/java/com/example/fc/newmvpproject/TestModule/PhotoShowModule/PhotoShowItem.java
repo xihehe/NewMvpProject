@@ -1,4 +1,4 @@
-package com.fc.myutilmodule.PhotoShowModule;
+package com.example.fc.newmvpproject.TestModule.PhotoShowModule;
 
 import java.io.Serializable;
 

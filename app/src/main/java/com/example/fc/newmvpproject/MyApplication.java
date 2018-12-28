@@ -3,6 +3,8 @@ package com.example.fc.newmvpproject;
 import android.app.Application;
 import android.content.Context;
 
+import com.liulishuo.filedownloader.FileDownloader;
+
 public class MyApplication extends Application {
 
     public static Context mContext;
@@ -25,6 +27,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = getApplicationContext();
+        FileDownloader.setupOnApplicationOnCreate(this);
     }
 
     public static Context getContext() {

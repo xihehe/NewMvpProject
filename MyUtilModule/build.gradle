@@ -78,5 +78,7 @@ dependencies {
     api 'com.jakewharton:butterknife:8.5.1'
     api 'com.jakewharton:butterknife-compiler:8.5.1'
 
+    //下载
+    api 'com.liulishuo.filedownloader:library:1.7.4'
 
 }

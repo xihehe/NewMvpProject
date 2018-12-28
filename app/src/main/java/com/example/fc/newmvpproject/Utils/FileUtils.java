@@ -30,7 +30,7 @@ public class FileUtils {
         //如果没SD卡则放缓存
         if (Environment.MEDIA_MOUNTED.equals(sdcardState)) {
             BASE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath()
-                    + "/cityhuner/";
+                    + "/UtilModule/";
         } else {
             BASE_PATH = MyApplication.getApp().getCacheDirPath();
         }
@@ -38,10 +38,10 @@ public class FileUtils {
     }
 
     public String getBasePath(){return Environment.getExternalStorageDirectory().getAbsolutePath()
-            + "/cityhuner" ;}
+            + "/UtilModule" ;}
 
-    public String getPhotoTempPath() {
-        return BASE_PATH + "qrcode";
+    public String getPhotoPicPath() {
+        return BASE_PATH + "pic";
     }
     public String getPhotoCropPath() {return BASE_PATH + "crop";}
     public String getPhotoHeadPath() {return BASE_PATH + "head";}

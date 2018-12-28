@@ -6,6 +6,7 @@
 
     <!-- 外置存储存取权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
@@ -15,6 +16,7 @@
         android:theme="@style/AppTheme" >
 
         <activity android:name=".PhotoPcikModule.PhotoPickerActivity"/>
-        <activity android:name=".PhotoShowModule.PhotoShowActivity"/>
+        <activity android:name="com.example.fc.newmvpproject.TestModule.PhotoShowModule.PhotoShowActivity"/>
     </application>
+
 </manifest>

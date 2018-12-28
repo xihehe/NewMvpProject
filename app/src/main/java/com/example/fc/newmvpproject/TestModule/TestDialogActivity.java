@@ -12,7 +12,10 @@ import com.example.fc.newmvpproject.Utils.ToastUtil;
 import com.fc.myutilmodule.BaseModule.BaseToolBarActivity;
 import com.fc.myutilmodule.DialogBottomModule.DialogFragmentUtils.CustomDialogBoottomShareFragment;
 import com.fc.myutilmodule.DialogModule.IInputDialog;
+import com.fc.myutilmodule.DownLoadModule.DownLoadUtils;
 import com.fc.myutilmodule.ViewModule.BamButton;
+import com.liulishuo.filedownloader.BaseDownloadTask;
+import com.liulishuo.filedownloader.FileDownloadListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -122,6 +125,17 @@ public class TestDialogActivity extends BaseToolBarActivity {
                             @Override
                             public void onClick(View v) {
                                 dialogBottomPresenterCompl.dismissShareDialog();
+                            }
+                        };
+                    }
+
+                    @Override
+                    public View.OnClickListener setDownClick() {
+                        return new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+
+
                             }
                         };
                     }

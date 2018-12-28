@@ -1,10 +1,7 @@
 package com.example.fc.newmvpproject.TabPageModule.Fragment.BlueFragment.Adapter;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
 import android.widget.TextView;
 
 
@@ -13,14 +10,11 @@ import com.example.fc.newmvpproject.TestModule.ImageModule.PickPhotoActivity;
 import com.example.fc.newmvpproject.TestModule.NetworkModule.TestNetWorkActivity;
 import com.example.fc.newmvpproject.TestModule.SimpleCountDownActivity;
 import com.example.fc.newmvpproject.TestModule.TestDialogActivity;
-import com.example.fc.newmvpproject.Utils.ToastUtil;
 import com.fc.myutilmodule.BaseModule.BaseActivity;
 import com.example.fc.newmvpproject.R;
 import com.example.fc.newmvpproject.TabPageModule.Fragment.Model.BlueItem;
-import com.fc.myutilmodule.DialogBottomModule.DialogFragmentUtils.CustomDialogBoottomShareFragment;
-import com.fc.myutilmodule.DialogModule.IInputDialog;
-import com.fc.myutilmodule.PhotoShowModule.PhotoShowActivity;
-import com.fc.myutilmodule.PhotoShowModule.PhotoShowItem;
+import com.example.fc.newmvpproject.TestModule.PhotoShowModule.PhotoShowActivity;
+import com.example.fc.newmvpproject.TestModule.PhotoShowModule.PhotoShowItem;
 import com.fc.myutilmodule.RxJavaModule.RxJavaUtils;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;

@@ -1,4 +1,4 @@
-package com.fc.myutilmodule.PhotoShowModule;
+package com.example.fc.newmvpproject.TestModule.PhotoShowModule;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,6 @@ import com.fc.myutilmodule.BaseModule.BaseToolBarActivity;
 import com.fc.myutilmodule.R;
 import com.shizhefei.view.indicator.FixedIndicatorView;
 import com.shizhefei.view.indicator.IndicatorViewPager;
-import com.shizhefei.view.indicator.ScrollIndicatorView;
 
 import java.util.List;
 
@@ -29,6 +28,7 @@ public class PhotoShowActivity extends BaseToolBarActivity {
         setContentView(R.layout.activity_photoshow);
         initBundle();
         titleBar.setBackgroundColor(ContextCompat.getColor(this,R.color.black));
+
         photoShowAdapter = new PhotoShowAdapter(getSupportFragmentManager(),this,mDatas);
         photoViewPager = (ViewPager)findViewById(R.id.photo_viewPager);
         photoViewPager.setOffscreenPageLimit(3);

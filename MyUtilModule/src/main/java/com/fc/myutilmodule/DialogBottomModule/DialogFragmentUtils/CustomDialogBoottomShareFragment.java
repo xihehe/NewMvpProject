@@ -20,11 +20,13 @@ public class CustomDialogBoottomShareFragment extends CustomDialogBottomFragment
     LinearLayout layout_Pyq;
     LinearLayout layout_QQ;
     LinearLayout layout_Weibo;
+    LinearLayout layout_Down;
 
     View.OnClickListener clickWx;
     View.OnClickListener clickPyq;
     View.OnClickListener clickQQ;
     View.OnClickListener clickWeibo;
+    View.OnClickListener clickDown;
 
 
 
@@ -48,6 +50,7 @@ public class CustomDialogBoottomShareFragment extends CustomDialogBottomFragment
         layout_Pyq = (LinearLayout) dialogView.findViewById(R.id.dialog_iconPyq);
         layout_QQ = (LinearLayout) dialogView.findViewById(R.id.dialog_iconQQ);
         layout_Weibo = (LinearLayout) dialogView.findViewById(R.id.dialog_iconWeibo);
+        layout_Down = (LinearLayout) dialogView.findViewById(R.id.dialog_iconDown);
 
         if(clickWx!=null){
             layout_Wx.setVisibility(View.VISIBLE);
@@ -76,6 +79,13 @@ public class CustomDialogBoottomShareFragment extends CustomDialogBottomFragment
             layout_Weibo.setVisibility(View.GONE);
         }
 
+        if(clickDown!=null){
+            layout_Down.setVisibility(View.VISIBLE);
+            setViewListener(layout_Down,clickDown);
+        }else{
+            layout_Down.setVisibility(View.GONE);
+        }
+
         setContentView(dialogView);
         setTitle("分享到");
         setNegativeButton("取消", new DialogInterface.OnClickListener() {
@@ -92,7 +102,7 @@ public class CustomDialogBoottomShareFragment extends CustomDialogBottomFragment
         this.clickPyq = dialogClick.setPyqClick();
         this.clickQQ = dialogClick.setQQClick();
         this.clickWeibo = dialogClick.setWeiboClick();
-
+        this.clickDown = dialogClick.setDownClick();
     }
 
 
@@ -110,6 +120,7 @@ public class CustomDialogBoottomShareFragment extends CustomDialogBottomFragment
         View.OnClickListener setPyqClick();
         View.OnClickListener setQQClick();
         View.OnClickListener setWeiboClick();
+        View.OnClickListener setDownClick();
         }
 
 }
