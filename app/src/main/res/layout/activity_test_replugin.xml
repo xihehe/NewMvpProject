@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/replugin_btn1"
+        android:text="安装外部插件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/replugin_btn2"
+        android:text="调用外部插件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/replugin_btn3"
+        android:text="更新外部插件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/replugin_btn4"
+        android:text="卸载外部插件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.fc.myutilmodule.ViewModule.BamButton
+        android:id="@+id/replugin_btn11"
+        android:text="调用内部插件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

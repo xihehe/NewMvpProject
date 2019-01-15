@@ -2,23 +2,30 @@ package com.example.fc.newmvpproject.TabPageModule.Fragment.BlueFragment.Adapter
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 
 
 import com.example.fc.newmvpproject.TestModule.ImageModule.PickPhotoActivity;
 import com.example.fc.newmvpproject.TestModule.NetworkModule.TestNetWorkActivity;
+import com.example.fc.newmvpproject.TestModule.RePluginModule.RePluginActivity;
 import com.example.fc.newmvpproject.TestModule.SimpleCountDownActivity;
 import com.example.fc.newmvpproject.TestModule.TestDialogActivity;
+import com.example.fc.newmvpproject.Utils.FileUtils;
+import com.example.fc.newmvpproject.Utils.ToastUtil;
 import com.fc.myutilmodule.BaseModule.BaseActivity;
 import com.example.fc.newmvpproject.R;
 import com.example.fc.newmvpproject.TabPageModule.Fragment.Model.BlueItem;
 import com.example.fc.newmvpproject.TestModule.PhotoShowModule.PhotoShowActivity;
 import com.example.fc.newmvpproject.TestModule.PhotoShowModule.PhotoShowItem;
 import com.fc.myutilmodule.RxJavaModule.RxJavaUtils;
+import com.qihoo360.replugin.RePlugin;
+import com.qihoo360.replugin.model.PluginInfo;
 import com.zhy.adapter.recyclerview.CommonAdapter;
 import com.zhy.adapter.recyclerview.base.ViewHolder;
 
+import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +36,7 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
 
     Context context;
     List<BlueItem> mlist;
+
 
     public BlueAdapter(Context context, int layoutId, List<BlueItem> datas) {
         super(context, layoutId, datas);
@@ -75,6 +83,12 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                         bundle.putSerializable(PhotoShowActivity.SHOW_IMGS_DATA,(Serializable)imgRes);
                         ((BaseActivity) context).IntentToActivity(context, PhotoShowActivity.class, bundle);
 
+                    }else if(position==5){
+                        ((BaseActivity) context).IntentToActivity(context, RePluginActivity.class, null);
+                    }else if(position==6){
+
+                    }else if(position==7){
+
                     }else{
 
                     }
@@ -105,6 +119,12 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                         imgRes.add(photoShowItem2);
                         bundle.putSerializable(PhotoShowActivity.SHOW_IMGS_DATA,(Serializable)imgRes);
                         ((BaseActivity) context).IntentToActivity(context, PhotoShowActivity.class, bundle);
+                    }else if(position==5){
+                        ((BaseActivity) context).IntentToActivity(context, RePluginActivity.class, null);
+                    }else if(position==6){
+
+                    }else if(position==7){
+
                     }else{
 
                     }

@@ -33,7 +33,6 @@ public class BluePresenterCompl implements IBluePresenter {
     }
 
 
-
     private List<BlueItem> loadTestData(int page){
         if(page ==1){
             blueDataHolder.CleanData();
@@ -49,6 +48,10 @@ public class BluePresenterCompl implements IBluePresenter {
                 blueDataHolder.addData(new BlueItem("网络请求" ,"各种模式网络请求",""));
             }else if(i==4){
                 blueDataHolder.addData(new BlueItem("图片浏览", "查看图片", ""));
+            }else if(i==5){
+                blueDataHolder.addData(new BlueItem("插件开发", "360热修复", ""));
+            }else if(i==6){
+                blueDataHolder.addData(new BlueItem("未完待续", "未完待续", ""));
             }else{
                 blueDataHolder.addData(new BlueItem("未完待续", "未完待续", ""));
             }
