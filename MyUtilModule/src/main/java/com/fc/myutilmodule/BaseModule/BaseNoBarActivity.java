@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 
 import com.fc.myutilmodule.R;
 import com.hjq.bar.TitleBar;
+import com.jaeger.library.StatusBarUtil;
 
 public class BaseNoBarActivity extends BaseActivity {
 
@@ -17,6 +18,7 @@ public class BaseNoBarActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override

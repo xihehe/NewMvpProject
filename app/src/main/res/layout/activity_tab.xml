@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
+    android:fitsSystemWindows="false"
     android:gravity="center_vertical"
     >
     <!-- 存放主要页面内容 -->

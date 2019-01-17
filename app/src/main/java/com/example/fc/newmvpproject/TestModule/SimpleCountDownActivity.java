@@ -2,7 +2,6 @@ package com.example.fc.newmvpproject.TestModule;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -10,21 +9,10 @@ import com.example.fc.newmvpproject.R;
 import com.fc.myutilmodule.BaseModule.BaseToolBarActivity;
 import com.fc.myutilmodule.RxJavaModule.RxCountDown;
 import com.fc.myutilmodule.RxJavaModule.RxJavaUtils;
-import com.fc.myutilmodule.Utils.TimeUtils;
-import com.jakewharton.rxbinding2.view.RxView;
-import com.jakewharton.rxbinding2.widget.RxTextView;
-
-import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
-import io.reactivex.schedulers.Schedulers;
 
 public class SimpleCountDownActivity extends BaseToolBarActivity {
 

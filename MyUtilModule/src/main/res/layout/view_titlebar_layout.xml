@@ -10,10 +10,11 @@
         android:fitsSystemWindows="true"
         android:paddingTop="@dimen/margin_46px"
         android:paddingBottom="@dimen/margin_10px"
+        app:icon_left="@mipmap/bar_icon_back_black"
         app:line_visible="false"
         app:color_left="@color/white"
         app:color_title="@color/white"
-        android:background="@color/blue"
+        android:background="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_150px"></com.hjq.bar.TitleBar>
 
