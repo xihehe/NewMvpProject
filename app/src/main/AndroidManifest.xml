@@ -50,6 +50,12 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
             android:screenOrientation="portrait"
+            android:name=".TestModule.PhotoShowModule.PhotoShowActivity"></activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
             android:name=".TestModule.SimpleCountDownActivity"></activity>
 
         <activity
