@@ -75,6 +75,13 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
             android:screenOrientation="portrait"
             android:name=".TestModule.RePluginModule.RePluginActivity"></activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:name=".TestModule.EasyThreadModule.EasyThreadAtivity"/>
+
     </application>
 
 </manifest>

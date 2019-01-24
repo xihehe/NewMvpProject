@@ -6,7 +6,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 
-
+import com.example.fc.newmvpproject.TestModule.EasyThreadModule.EasyThreadAtivity;
 import com.example.fc.newmvpproject.TestModule.ImageModule.PickPhotoActivity;
 import com.example.fc.newmvpproject.TestModule.NetworkModule.TestNetWorkActivity;
 import com.example.fc.newmvpproject.TestModule.RePluginModule.RePluginActivity;
@@ -86,7 +86,7 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==5){
                         ((BaseActivity) context).IntentToActivity(context, RePluginActivity.class, null);
                     }else if(position==6){
-
+                        ((BaseActivity) context).IntentToActivity(context, EasyThreadAtivity.class, null);
                     }else if(position==7){
 
                     }else{
@@ -122,7 +122,7 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==5){
                         ((BaseActivity) context).IntentToActivity(context, RePluginActivity.class, null);
                     }else if(position==6){
-
+                        ((BaseActivity) context).IntentToActivity(context, EasyThreadAtivity.class, null);
                     }else if(position==7){
 
                     }else{
