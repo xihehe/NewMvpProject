@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.fc.newmvpproject.R;
+import com.fc.myutilmodule.BaseModule.BaseActivity;
 import com.fc.myutilmodule.BaseModule.BaseNoBarActivity;
+import com.fc.myutilmodule.BaseModule.BaseToolBarActivity;
 import com.fc.myutilmodule.Easythread.AsyncCallback;
 import com.fc.myutilmodule.Easythread.Callback;
 import com.fc.myutilmodule.Easythread.EasyThread;
@@ -18,7 +20,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 //https://github.com/yjfnypeu/EasyThread 资料查询
-public class EasyThreadAtivity extends BaseNoBarActivity{
+public class EasyThreadAtivity extends BaseToolBarActivity{
 
     EasyThread executor;
     @Override
