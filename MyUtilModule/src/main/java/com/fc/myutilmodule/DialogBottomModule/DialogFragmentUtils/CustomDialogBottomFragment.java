@@ -38,8 +38,8 @@ public class CustomDialogBottomFragment extends DialogFragment {
     private View contentView;
 
 
-    public static CustomDialogFragement newInstance(String title) {
-        CustomDialogFragement frag = new CustomDialogFragement();
+    public static CustomDialogBottomFragment newInstance(String title) {
+        CustomDialogBottomFragment frag = new CustomDialogBottomFragment();
         Bundle b = new Bundle();
         b.putString("title", title);
         frag.setArguments(b);

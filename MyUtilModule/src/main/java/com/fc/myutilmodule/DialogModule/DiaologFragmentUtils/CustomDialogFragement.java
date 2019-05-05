@@ -122,7 +122,7 @@ public class CustomDialogFragement extends DialogFragment {
                     View.GONE);
         }
 
-        if (TextUtils.isEmpty(negative) && TextUtils.isEmpty(titleStr)) {
+        if (TextUtils.isEmpty(positive) && TextUtils.isEmpty(negative) && TextUtils.isEmpty(titleStr)) {
             btnLayout.setVisibility(View.GONE);
         }else{
             btnLayout.setVisibility(View.VISIBLE);

@@ -14,8 +14,9 @@
         app:line_visible="false"
         app:color_left="@color/white"
         app:color_title="@color/white"
-        android:background="@color/colorAccent"
+        android:background="@color/white"
         android:layout_width="match_parent"
+
         android:layout_height="@dimen/height_150px"></com.hjq.bar.TitleBar>
 
 </LinearLayout>

@@ -152,7 +152,7 @@ public class Utils {
         // 屏幕宽度算法:屏幕宽度（像素）/屏幕密度
         int screenWidth = (int) (width / density);  // 屏幕宽度(dp)
 
-        return  screenWidth;
+        return  width;
     }
 
     public static int getScreenH(Context context){
