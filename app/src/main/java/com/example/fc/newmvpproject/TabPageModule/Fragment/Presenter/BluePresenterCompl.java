@@ -52,6 +52,8 @@ public class BluePresenterCompl implements IBluePresenter {
                 blueDataHolder.addData(new BlueItem("插件开发", "360热修复", ""));
             }else if(i==6){
                 blueDataHolder.addData(new BlueItem("线程池", "线程池使用", ""));
+            }else if(i==7){
+                blueDataHolder.addData(new BlueItem("线程安全的Thread", "可以唤醒等待线程的Thread", ""));
             }else{
                 blueDataHolder.addData(new BlueItem("未完待续", "未完待续", ""));
             }

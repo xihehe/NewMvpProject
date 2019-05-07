@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.fc.newmvpproject.TestModule.EasyThreadModule.EasyThreadAtivity;
 import com.example.fc.newmvpproject.TestModule.ImageModule.PickPhotoActivity;
+import com.example.fc.newmvpproject.TestModule.MyLockThreadTestActivity;
 import com.example.fc.newmvpproject.TestModule.NetworkModule.TestNetWorkActivity;
 import com.example.fc.newmvpproject.TestModule.RePluginModule.RePluginActivity;
 import com.example.fc.newmvpproject.TestModule.SimpleCountDownActivity;
@@ -88,7 +89,7 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==6){
                         ((BaseActivity) context).IntentToActivity(context, EasyThreadAtivity.class, null);
                     }else if(position==7){
-
+                        ((BaseActivity) context).IntentToActivity(context, MyLockThreadTestActivity.class, null);
                     }else{
 
                     }
@@ -124,7 +125,7 @@ public class BlueAdapter extends CommonAdapter<BlueItem> {
                     }else if(position==6){
                         ((BaseActivity) context).IntentToActivity(context, EasyThreadAtivity.class, null);
                     }else if(position==7){
-
+                        ((BaseActivity) context).IntentToActivity(context, MyLockThreadTestActivity.class, null);
                     }else{
 
                     }

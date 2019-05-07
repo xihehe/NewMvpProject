@@ -7,7 +7,7 @@ import com.fc.myutilmodule.HttpModule.HttpBase.BaseObserver;
 import com.fc.myutilmodule.HttpModule.HttpBase.HttpResponse;
 import com.fc.myutilmodule.HttpModule.HttpManager;
 import com.fc.myutilmodule.HttpModule.RequestBodyType;
-import com.fc.myutilmodule.HttpModule.Utils.GsonTools;
+import com.fc.myutilmodule.HttpModule.Utils.GsonUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -69,7 +69,7 @@ public class HttpUse_Login extends HttpManager {
      * @param subscriber
      */
      public void OBLoginRequestBody(LoginRequest loginRequest,BaseObserver<LoginResult> subscriber){
-         String toJson = GsonTools.getGsonForObject(loginRequest);
+         String toJson = GsonUtils.GsonString(loginRequest);
          RequestBody requestBody = RequestBody.create(RequestBodyType.MEDIA_TYPE_JSONUTF8, toJson);
 
          Observable<HttpResponse<LoginResult>> observable= LoginService.LoginRequestBody(requestBody);
